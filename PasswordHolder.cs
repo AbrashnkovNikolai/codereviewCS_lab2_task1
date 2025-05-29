@@ -43,7 +43,8 @@ public class PasswordHolder : StringHolder
     {
         do
         {
-            Console.Write("Çàäàéòå ïàðîëü (ïàðîëü äîëæåí ñîäåðæàòü ìèíèìóì {0} ñèìâîëîâ): ", _minLength);
+            Console.Write("Çàäàéòå ïàðîëü (ïàðîëü äîëæåí ñîäåðæàòü ìèíèìóì {0} ñèìâîëîâ): ",
+            _minLength);
             ConsoleKeyInfo key;
             _value = ""; // Ñáðîñ ïàðîëÿ ïåðåä íîâûì ââîäîì
             do
