@@ -1,12 +1,6 @@
 public class PasswordHolder : StringHolder
 {
 
-    //public int X
-    //{
-    //    get => _x;
-    //    set => _x = value;
-    //}
-    //protected string _value;
     private int _length;
     private int length {
         get => _length;
@@ -49,9 +43,9 @@ public class PasswordHolder : StringHolder
     {
         do
         {
-            Console.Write("Задайте пароль (пароль должен содержать минимум {0} символов): ", _minLength);
+            Console.Write("Г‡Г Г¤Г Г©ГІГҐ ГЇГ Г°Г®Г«Гј (ГЇГ Г°Г®Г«Гј Г¤Г®Г«Г¦ГҐГ­ Г±Г®Г¤ГҐГ°Г¦Г ГІГј Г¬ГЁГ­ГЁГ¬ГіГ¬ {0} Г±ГЁГ¬ГўГ®Г«Г®Гў): ", _minLength);
             ConsoleKeyInfo key;
-            _value = ""; // Сброс пароля перед новым вводом
+            _value = ""; // Г‘ГЎГ°Г®Г± ГЇГ Г°Г®Г«Гї ГЇГҐГ°ГҐГ¤ Г­Г®ГўГ»Г¬ ГўГўГ®Г¤Г®Г¬
             do
             {
                 key = Console.ReadKey(true);
@@ -75,7 +69,7 @@ public class PasswordHolder : StringHolder
 
             if (_value.Length < _minLength)
             {
-                Console.WriteLine($"Пароль должен содержать минимум {_minLength} символов. Попробуйте еще раз.");
+                Console.WriteLine($"ГЏГ Г°Г®Г«Гј Г¤Г®Г«Г¦ГҐГ­ Г±Г®Г¤ГҐГ°Г¦Г ГІГј Г¬ГЁГ­ГЁГ¬ГіГ¬ {_minLength} Г±ГЁГ¬ГўГ®Г«Г®Гў. ГЏГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГҐГ№ГҐ Г°Г Г§.");
             }
             else
             {
@@ -85,7 +79,7 @@ public class PasswordHolder : StringHolder
     }
     public void ShowPassword()
     {
-        Console.WriteLine($"Введенный пароль: {_value}");
+        Console.WriteLine($"Г‚ГўГҐГ¤ГҐГ­Г­Г»Г© ГЇГ Г°Г®Г«Гј: {_value}");
     }
 
 }
